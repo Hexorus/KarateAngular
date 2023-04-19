@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>conduitApp.usersgql.users-gql</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-19 01:42:24 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>simple graphql request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:54]"><span>[2.1:54]</span> <span>graphql query from a file and using examples - Bret</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:55]"><span>[2.2:55]</span> <span>graphql query from a file and using examples - Antonette</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.3:56]"><span>[2.3:56]</span> <span>graphql query from a file and using examples - Samantha</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">conduitApp/usersgql/users-gql.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">users</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">graphql_zero</a><a class="badge badge-primary" href="karate-tags.html">graphql_examples</a><a class="badge badge-primary" href="karate-tags.html">run</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">simple graphql request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>677</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://graphqlzero.almansi.me/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:42:22.565 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># note the use of text instead of def since this is NOT json</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.11">{
+  user(id: 1) {
+    posts {
+      data {
+        id
+        title
+      }
+    }
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">643</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">13:42:22.570 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 108
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;{\n  user(id: 1) {\n    posts {\n      data {\n        id\n        title\n      }\n    }\n  }\n}&quot;}
+
+13:42:23.210 response time in milliseconds: 639
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: public, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 598
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 19 Apr 2023 18:43:44 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; X-Vercel-Cache: MISS
+1 &lt; X-Vercel-Id: sfo1::sfo1::9kwvh-1681929824774-00b08fab7693
+{&quot;data&quot;:{&quot;user&quot;:{&quot;posts&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;title&quot;:&quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;title&quot;:&quot;qui est esse&quot;},{&quot;id&quot;:&quot;3&quot;,&quot;title&quot;:&quot;ea molestias quasi exercitationem repellat qui ipsa sit aut&quot;},{&quot;id&quot;:&quot;4&quot;,&quot;title&quot;:&quot;eum et est occaecati&quot;},{&quot;id&quot;:&quot;5&quot;,&quot;title&quot;:&quot;nesciunt quas odio&quot;},{&quot;id&quot;:&quot;6&quot;,&quot;title&quot;:&quot;dolorem eum magni eos aperiam quia&quot;},{&quot;id&quot;:&quot;7&quot;,&quot;title&quot;:&quot;magnam facilis autem&quot;},{&quot;id&quot;:&quot;8&quot;,&quot;title&quot;:&quot;dolorem dolore est ipsam&quot;},{&quot;id&quot;:&quot;9&quot;,&quot;title&quot;:&quot;nesciunt iure omnis dolorem tempora et accusantium&quot;},{&quot;id&quot;:&quot;10&quot;,&quot;title&quot;:&quot;optio molestias id quia eum&quot;}]}}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># pretty print the response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;response:&#39;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">13:42:23.218 [print] response: {
+  &quot;data&quot;: {
+    &quot;user&quot;: {
+      &quot;posts&quot;: {
+        &quot;data&quot;: [
+          {
+            &quot;id&quot;: &quot;1&quot;,
+            &quot;title&quot;: &quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;
+          },
+          {
+            &quot;id&quot;: &quot;2&quot;,
+            &quot;title&quot;: &quot;qui est esse&quot;
+          },
+          {
+            &quot;id&quot;: &quot;3&quot;,
+            &quot;title&quot;: &quot;ea molestias quasi exercitationem repellat qui ipsa sit aut&quot;
+          },
+          {
+            &quot;id&quot;: &quot;4&quot;,
+            &quot;title&quot;: &quot;eum et est occaecati&quot;
+          },
+          {
+            &quot;id&quot;: &quot;5&quot;,
+            &quot;title&quot;: &quot;nesciunt quas odio&quot;
+          },
+          {
+            &quot;id&quot;: &quot;6&quot;,
+            &quot;title&quot;: &quot;dolorem eum magni eos aperiam quia&quot;
+          },
+          {
+            &quot;id&quot;: &quot;7&quot;,
+            &quot;title&quot;: &quot;magnam facilis autem&quot;
+          },
+          {
+            &quot;id&quot;: &quot;8&quot;,
+            &quot;title&quot;: &quot;dolorem dolore est ipsam&quot;
+          },
+          {
+            &quot;id&quot;: &quot;9&quot;,
+            &quot;title&quot;: &quot;nesciunt iure omnis dolorem tempora et accusantium&quot;
+          },
+          {
+            &quot;id&quot;: &quot;10&quot;,
+            &quot;title&quot;: &quot;optio molestias id quia eum&quot;
+          }
+        ]
+      }
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># json-path makes it easy to focus only on the parts you are interested in</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># which is especially useful for graph-ql as responses tend to be heavily nested</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># &#39;$&#39; happens to be a JsonPath-friendly short-cut for the &#39;response&#39; variable</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match $.data.user.posts.data[0] contains { id: &#39;1&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># the &#39;..&#39; wildcard is useful for traversing deeply nested parts of the json</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def posts = $..posts.data[*]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match posts[1] == { id: &#39;2&#39;, title: &#39;qui est esse&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:54]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">graphql_zero</a><a class="badge badge-primary" href="karate-tags.html">graphql_examples</a><a class="badge badge-primary" href="karate-tags.html">run</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:54]</span>
+                <span class="scenario-name">graphql query from a file and using examples - Bret</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>463</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:54]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:54]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://graphqlzero.almansi.me/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">13:42:22.718 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># here the query is read from a file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># note that the &#39;replace&#39; keyword (not used here) can also be very useful for dynamic query building</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def query = read(&#39;./queries/user-by-id.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39;, variables: &#39;#({ id: 1 })&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">444</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.46">13:42:22.737 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 204
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query ($id: ID!){\r\n  user(id: $id) {\r\n    id\r\n    username\r\n    email\r\n    address {\r\n      geo {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n  }\r\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:1}}
+
+13:42:23.177 response time in milliseconds: 440
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: public, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 124
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 19 Apr 2023 18:43:44 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; X-Vercel-Cache: MISS
+1 &lt; X-Vercel-Id: sfo1::sfo1::5wnnn-1681929824911-d9f5d4fb1308
+{&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;geo&quot;:{&quot;lat&quot;:-37.3159,&quot;lng&quot;:81.1496}}}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response..username contains &quot;Bret&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.user.address == { geo:{ lng: 81.1496, lat: -37.3159 } }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:55]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">graphql_zero</a><a class="badge badge-primary" href="karate-tags.html">graphql_examples</a><a class="badge badge-primary" href="karate-tags.html">run</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:55]</span>
+                <span class="scenario-name">graphql query from a file and using examples - Antonette</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>449</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:55]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://graphqlzero.almansi.me/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">13:42:22.869 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># here the query is read from a file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># note that the &#39;replace&#39; keyword (not used here) can also be very useful for dynamic query building</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def query = read(&#39;./queries/user-by-id.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39;, variables: &#39;#({ id: 2 })&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">439</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.46">13:42:22.881 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 204
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query ($id: ID!){\r\n  user(id: $id) {\r\n    id\r\n    username\r\n    email\r\n    address {\r\n      geo {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n  }\r\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:2}}
+
+13:42:23.316 response time in milliseconds: 434
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: public, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 130
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 19 Apr 2023 18:43:45 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; X-Vercel-Cache: MISS
+1 &lt; X-Vercel-Id: sfo1::sfo1::n77h6-1681929825049-dc45e36ff3d5
+{&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;2&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;geo&quot;:{&quot;lat&quot;:-43.9509,&quot;lng&quot;:-34.4618}}}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response..username contains &quot;Antonette&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.user.address == { geo:{ lat:-43.9509, lng: -34.4618 } }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.3:56]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">graphql_zero</a><a class="badge badge-primary" href="karate-tags.html">graphql_examples</a><a class="badge badge-primary" href="karate-tags.html">run</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.3:56]</span>
+                <span class="scenario-name">graphql query from a file and using examples - Samantha</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>566</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.3:56]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.3:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://graphqlzero.almansi.me/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5">13:42:22.972 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># here the query is read from a file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># note that the &#39;replace&#39; keyword (not used here) can also be very useful for dynamic query building</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def query = read(&#39;./queries/user-by-id.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39;, variables: &#39;#({ id: 3 })&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">557</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.46">13:42:22.983 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 204
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query ($id: ID!){\r\n  user(id: $id) {\r\n    id\r\n    username\r\n    email\r\n    address {\r\n      geo {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n  }\r\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:3}}
+
+13:42:23.535 response time in milliseconds: 552
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: public, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 130
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 19 Apr 2023 18:43:45 GMT
+1 &lt; Server: Vercel
+1 &lt; Strict-Transport-Security: max-age=63072000
+1 &lt; X-Vercel-Cache: MISS
+1 &lt; X-Vercel-Id: sfo1::sfo1::z4ntr-1681929825272-5b282fc964a9
+{&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;3&quot;,&quot;username&quot;:&quot;Samantha&quot;,&quot;email&quot;:&quot;Nathan@yesenia.net&quot;,&quot;address&quot;:{&quot;geo&quot;:{&quot;lat&quot;:-68.6102,&quot;lng&quot;:-47.0653}}}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response..username contains &quot;Samantha&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.user.address == { geo:{ lat:-68.6102, lng: -47.0653 } }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

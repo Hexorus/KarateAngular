@@ -1,0 +1,20 @@
+<testsuite failures="1" name="conduitApp/feature/Articles.feature" skipped="0" tests="1" time="1.535576"><testcase classname="conduitApp.feature.Articles" name="[1:6] Create a new article" time="1.535576"><failure message="status code was: 422, expected: 200, response time in milliseconds: 288, url: https://api.realworld.io/api/articles, response: &#10;{&quot;errors&quot;:{&quot;title&quot;:[&quot;must be unique&quot;]}}&#10;classpath:conduitApp/feature/Articles.feature:21">Given url 'https://api.realworld.io/api/' ................................. passed
+Given path 'users/login' .................................................. passed
+And request {"user": {"email": "karate@test2.com", "password": "12345"}} .. passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def token = response.user.token ......................................... passed
+Given path 'articles' ..................................................... passed
+Given header Authorization = 'Token ' + token ............................. passed
+And request {"article": {"tagList": [],"title": "blaxdx","description": "blaxd","body": "blaxd"}} . passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 422, expected: 200, response time in milliseconds: 288, url: https://api.realworld.io/api/articles, response: 
+{"errors":{"title":["must be unique"]}}
+classpath:conduitApp/feature/Articles.feature:21&#13;
+	at &lt;feature&gt;.: Then status 200 (classpath:conduitApp/feature/Articles.feature:21:21)&#13;
+
+</failure></testcase>
+</testsuite>

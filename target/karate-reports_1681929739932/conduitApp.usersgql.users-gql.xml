@@ -1,0 +1,35 @@
+<testsuite failures="0" name="conduitApp/usersgql/users-gql.feature" skipped="0" tests="4" time="2.630716"><testcase classname="conduitApp.usersgql.users-gql" name="[1:9] simple graphql request" time="0.836136"><system-out>* url 'https://graphqlzero.almansi.me/api' ................................ passed
+Given text query = ........................................................ passed
+And request { query: '#(query)' } ......................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print 'response:', response ............................................. passed
+* match $.data.user.posts.data[0] contains { id: '1' } .................... passed
+* def posts = $..posts.data[*] ............................................ passed
+* match posts[1] == { id: '2', title: 'qui est esse' } .................... passed
+</system-out></testcase>
+<testcase classname="conduitApp.usersgql.users-gql" name="[2.1:54] graphql query from a file and using examples - Bret" time="0.54177"><system-out>* url 'https://graphqlzero.almansi.me/api' ................................ passed
+Given def query = read('./queries/user-by-id.graphql') .................... passed
+And request { query: '#(query)', variables: '#({ id: 1 })' } .............. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response..username contains "Bret" .............................. passed
+And match response.data.user.address == { geo:{ lng: 81.1496, lat: -37.3159 } } . passed
+</system-out></testcase>
+<testcase classname="conduitApp.usersgql.users-gql" name="[2.2:55] graphql query from a file and using examples - Antonette" time="0.602814"><system-out>* url 'https://graphqlzero.almansi.me/api' ................................ passed
+Given def query = read('./queries/user-by-id.graphql') .................... passed
+And request { query: '#(query)', variables: '#({ id: 2 })' } .............. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response..username contains "Antonette" ......................... passed
+And match response.data.user.address == { geo:{ lat:-43.9509, lng: -34.4618 } } . passed
+</system-out></testcase>
+<testcase classname="conduitApp.usersgql.users-gql" name="[2.3:56] graphql query from a file and using examples - Samantha" time="0.649996"><system-out>* url 'https://graphqlzero.almansi.me/api' ................................ passed
+Given def query = read('./queries/user-by-id.graphql') .................... passed
+And request { query: '#(query)', variables: '#({ id: 3 })' } .............. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response..username contains "Samantha" .......................... passed
+And match response.data.user.address == { geo:{ lat:-68.6102, lng: -47.0653 } } . passed
+</system-out></testcase>
+</testsuite>
