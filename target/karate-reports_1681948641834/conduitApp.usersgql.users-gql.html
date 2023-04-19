@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-04-19 06:57:24 PM</div>
+    <div>2023-04-19 01:42:24 PM</div>
   </div>        
 </div>
 
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>699</span>
+              <span>ms:</span>&nbsp;<span>677</span>
             </div>
           </div>
           <div class="step-row">
@@ -103,7 +103,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.5">18:57:23.462 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.5">13:42:22.565 karate.env system property was: null 
 </div>   
 
   
@@ -167,7 +167,7 @@
         <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -195,7 +195,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">691</div>
+    <div class="time-cell passed">643</div>
   </div>
 
    
@@ -204,7 +204,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.25">18:57:23.472 request:
+  <div class="preformatted" data-parent="0.25">13:42:22.570 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 108
@@ -214,7 +214,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;query&quot;:&quot;{\n  user(id: 1) {\n    posts {\n      data {\n        id\n        title\n      }\n    }\n  }\n}&quot;}
 
-18:57:24.153 response time in milliseconds: 679
+13:42:23.210 response time in milliseconds: 639
 1 &lt; 200
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Allow-Origin: *
@@ -222,11 +222,11 @@
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 598
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 19 Apr 2023 23:58:45 GMT
+1 &lt; Date: Wed, 19 Apr 2023 18:43:44 GMT
 1 &lt; Server: Vercel
 1 &lt; Strict-Transport-Security: max-age=63072000
 1 &lt; X-Vercel-Cache: MISS
-1 &lt; X-Vercel-Id: sfo1::sfo1::dk6p7-1681948725728-3e116d16ea1c
+1 &lt; X-Vercel-Id: sfo1::sfo1::9kwvh-1681929824774-00b08fab7693
 {&quot;data&quot;:{&quot;user&quot;:{&quot;posts&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;title&quot;:&quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;title&quot;:&quot;qui est esse&quot;},{&quot;id&quot;:&quot;3&quot;,&quot;title&quot;:&quot;ea molestias quasi exercitationem repellat qui ipsa sit aut&quot;},{&quot;id&quot;:&quot;4&quot;,&quot;title&quot;:&quot;eum et est occaecati&quot;},{&quot;id&quot;:&quot;5&quot;,&quot;title&quot;:&quot;nesciunt quas odio&quot;},{&quot;id&quot;:&quot;6&quot;,&quot;title&quot;:&quot;dolorem eum magni eos aperiam quia&quot;},{&quot;id&quot;:&quot;7&quot;,&quot;title&quot;:&quot;magnam facilis autem&quot;},{&quot;id&quot;:&quot;8&quot;,&quot;title&quot;:&quot;dolorem dolore est ipsam&quot;},{&quot;id&quot;:&quot;9&quot;,&quot;title&quot;:&quot;nesciunt iure omnis dolorem tempora et accusantium&quot;},{&quot;id&quot;:&quot;10&quot;,&quot;title&quot;:&quot;optio molestias id quia eum&quot;}]}}}}
 
 </div>   
@@ -283,7 +283,7 @@
         <span>*</span>&nbsp;<span>print &#39;response:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -292,7 +292,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.29">18:57:24.161 [print] response: {
+  <div class="preformatted" data-parent="0.29">13:42:23.218 [print] response: {
   &quot;data&quot;: {
     &quot;user&quot;: {
       &quot;posts&quot;: {
@@ -387,7 +387,7 @@
         <span>*</span>&nbsp;<span>match $.data.user.posts.data[0] contains { id: &#39;1&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -422,7 +422,7 @@
         <span>*</span>&nbsp;<span>def posts = $..posts.data[*]</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -450,7 +450,7 @@
         <span>*</span>&nbsp;<span>match posts[1] == { id: &#39;2&#39;, title: &#39;qui est esse&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -479,7 +479,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>532</span>
+              <span>ms:</span>&nbsp;<span>463</span>
             </div>
           </div>
           <div class="step-row">
@@ -511,7 +511,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.5">18:57:23.619 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.5">13:42:22.718 karate.env system property was: null 
 </div>   
 
   
@@ -547,7 +547,7 @@
         <span>Given</span>&nbsp;<span>def query = read(&#39;./queries/user-by-id.graphql&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -575,7 +575,7 @@
         <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39;, variables: &#39;#({ id: 1 })&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -603,7 +603,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">514</div>
+    <div class="time-cell passed">444</div>
   </div>
 
    
@@ -612,7 +612,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.46">18:57:23.636 request:
+  <div class="preformatted" data-parent="1.46">13:42:22.737 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 204
@@ -622,7 +622,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;query&quot;:&quot;query ($id: ID!){\r\n  user(id: $id) {\r\n    id\r\n    username\r\n    email\r\n    address {\r\n      geo {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n  }\r\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:1}}
 
-18:57:24.148 response time in milliseconds: 512
+13:42:23.177 response time in milliseconds: 440
 1 &lt; 200
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Allow-Origin: *
@@ -630,11 +630,11 @@
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 124
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 19 Apr 2023 23:58:45 GMT
+1 &lt; Date: Wed, 19 Apr 2023 18:43:44 GMT
 1 &lt; Server: Vercel
 1 &lt; Strict-Transport-Security: max-age=63072000
 1 &lt; X-Vercel-Cache: MISS
-1 &lt; X-Vercel-Id: sfo1::sfo1::vsbcm-1681948725727-c733562f942b
+1 &lt; X-Vercel-Id: sfo1::sfo1::5wnnn-1681929824911-d9f5d4fb1308
 {&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;geo&quot;:{&quot;lat&quot;:-37.3159,&quot;lng&quot;:81.1496}}}}}
 
 </div>   
@@ -684,7 +684,7 @@
         <span>And</span>&nbsp;<span>match response..username contains &quot;Bret&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -741,7 +741,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>418</span>
+              <span>ms:</span>&nbsp;<span>449</span>
             </div>
           </div>
           <div class="step-row">
@@ -773,7 +773,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.5">18:57:23.933 karate.env system property was: null 
+  <div class="preformatted" data-parent="2.5">13:42:22.869 karate.env system property was: null 
 </div>   
 
   
@@ -809,7 +809,7 @@
         <span>Given</span>&nbsp;<span>def query = read(&#39;./queries/user-by-id.graphql&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -837,7 +837,7 @@
         <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39;, variables: &#39;#({ id: 2 })&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -865,7 +865,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">414</div>
+    <div class="time-cell passed">439</div>
   </div>
 
    
@@ -874,7 +874,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.46">18:57:23.938 request:
+  <div class="preformatted" data-parent="2.46">13:42:22.881 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 204
@@ -884,7 +884,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;query&quot;:&quot;query ($id: ID!){\r\n  user(id: $id) {\r\n    id\r\n    username\r\n    email\r\n    address {\r\n      geo {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n  }\r\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:2}}
 
-18:57:24.351 response time in milliseconds: 411
+13:42:23.316 response time in milliseconds: 434
 1 &lt; 200
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Allow-Origin: *
@@ -892,11 +892,11 @@
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 130
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 19 Apr 2023 23:58:46 GMT
+1 &lt; Date: Wed, 19 Apr 2023 18:43:45 GMT
 1 &lt; Server: Vercel
 1 &lt; Strict-Transport-Security: max-age=63072000
 1 &lt; X-Vercel-Cache: MISS
-1 &lt; X-Vercel-Id: sfo1::sfo1::jpgvs-1681948725966-fc6da8ebcc4e
+1 &lt; X-Vercel-Id: sfo1::sfo1::n77h6-1681929825049-dc45e36ff3d5
 {&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;2&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;geo&quot;:{&quot;lat&quot;:-43.9509,&quot;lng&quot;:-34.4618}}}}}
 
 </div>   
@@ -974,7 +974,7 @@
         <span>And</span>&nbsp;<span>match response.data.user.address == { geo:{ lat:-43.9509, lng: -34.4618 } }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1003,7 +1003,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>441</span>
+              <span>ms:</span>&nbsp;<span>566</span>
             </div>
           </div>
           <div class="step-row">
@@ -1026,7 +1026,7 @@
         <span>*</span>&nbsp;<span>url &#39;https://graphqlzero.almansi.me/api&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1035,7 +1035,7 @@
 
   
 
-  <div class="preformatted" data-parent="3.5">18:57:23.950 karate.env system property was: null 
+  <div class="preformatted" data-parent="3.5">13:42:22.972 karate.env system property was: null 
 </div>   
 
   
@@ -1071,7 +1071,7 @@
         <span>Given</span>&nbsp;<span>def query = read(&#39;./queries/user-by-id.graphql&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1127,7 +1127,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">433</div>
+    <div class="time-cell passed">557</div>
   </div>
 
    
@@ -1136,7 +1136,7 @@
 
   
 
-  <div class="preformatted" data-parent="3.46">18:57:23.960 request:
+  <div class="preformatted" data-parent="3.46">13:42:22.983 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 204
@@ -1146,7 +1146,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;query&quot;:&quot;query ($id: ID!){\r\n  user(id: $id) {\r\n    id\r\n    username\r\n    email\r\n    address {\r\n      geo {\r\n        lat\r\n        lng\r\n      }\r\n    }\r\n  }\r\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:3}}
 
-18:57:24.390 response time in milliseconds: 430
+13:42:23.535 response time in milliseconds: 552
 1 &lt; 200
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Allow-Origin: *
@@ -1154,11 +1154,11 @@
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 130
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 19 Apr 2023 23:58:46 GMT
+1 &lt; Date: Wed, 19 Apr 2023 18:43:45 GMT
 1 &lt; Server: Vercel
 1 &lt; Strict-Transport-Security: max-age=63072000
 1 &lt; X-Vercel-Cache: MISS
-1 &lt; X-Vercel-Id: sfo1::sfo1::rjwxr-1681948726007-dae2878b32eb
+1 &lt; X-Vercel-Id: sfo1::sfo1::z4ntr-1681929825272-5b282fc964a9
 {&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;3&quot;,&quot;username&quot;:&quot;Samantha&quot;,&quot;email&quot;:&quot;Nathan@yesenia.net&quot;,&quot;address&quot;:{&quot;geo&quot;:{&quot;lat&quot;:-68.6102,&quot;lng&quot;:-47.0653}}}}}
 
 </div>   
@@ -1236,7 +1236,7 @@
         <span>And</span>&nbsp;<span>match response.data.user.address == { geo:{ lat:-68.6102, lng: -47.0653 } }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    

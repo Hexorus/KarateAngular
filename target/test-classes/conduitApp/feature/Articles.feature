@@ -16,7 +16,7 @@ Scenario: Create a new article
     Given path 'articles'
     #que como minimo hay que ir cambiando el titulo
     Given header Authorization = 'Token ' + token 
-    And request {"article": {"tagList": [],"title": "blaxdx","description": "blaxd","body": "blaxd"}} 
+    And request {"article": {"tagList": [],"title": "blaxdx3","description": "blaxd","body": "blaxd"}} 
     When method Post
     Then status 200
 

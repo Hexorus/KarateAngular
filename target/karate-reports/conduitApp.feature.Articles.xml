@@ -1,4 +1,4 @@
-<testsuite failures="0" name="conduitApp/feature/Articles.feature" skipped="0" tests="1" time="1.411251"><testcase classname="conduitApp.feature.Articles" name="[1:6] Create a new article" time="1.411251"><system-out>Given url 'https://api.realworld.io/api/' ................................. passed
+<testsuite failures="0" name="conduitApp/feature/Articles.feature" skipped="0" tests="1" time="1.214338"><testcase classname="conduitApp.feature.Articles" name="[1:6] Create a new article" time="1.214338"><system-out>Given url 'https://api.realworld.io/api/' ................................. passed
 Given path 'users/login' .................................................. passed
 And request {"user": {"email": "karate@test2.com", "password": "12345"}} .. passed
 When method Post .......................................................... passed
@@ -6,7 +6,7 @@ Then status 200 ........................................................... pass
 * def token = response.user.token ......................................... passed
 Given path 'articles' ..................................................... passed
 Given header Authorization = 'Token ' + token ............................. passed
-And request {"article": {"tagList": [],"title": "blaxdx","description": "blaxd","body": "blaxd"}} . passed
+And request {"article": {"tagList": [],"title": "blaxdx3","description": "blaxd","body": "blaxd"}} . passed
 When method Post .......................................................... passed
 Then status 200 ........................................................... passed
 </system-out></testcase>

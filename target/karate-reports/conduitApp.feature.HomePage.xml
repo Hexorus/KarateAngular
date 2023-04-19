@@ -1,4 +1,4 @@
-<testsuite failures="0" name="conduitApp/feature/HomePage.feature" skipped="0" tests="2" time="2.850434"><testcase classname="conduitApp.feature.HomePage" name="[1:8] Get all tags" time="1.297313"><system-out>Given url 'https://api.realworld.io/api/' ................................. passed
+<testsuite failures="0" name="conduitApp/feature/HomePage.feature" skipped="0" tests="2" time="2.590128"><testcase classname="conduitApp.feature.HomePage" name="[1:8] Get all tags" time="1.19257"><system-out>Given url 'https://api.realworld.io/api/' ................................. passed
 Given path 'tags' ......................................................... passed
 When method Get ........................................................... passed
 Then status 200 ........................................................... passed
@@ -7,7 +7,7 @@ And match response.tags !contains 'truck' ................................. pass
 And match response.tags == "#array" ....................................... passed
 And match each response.tags == "#string" ................................. passed
 </system-out></testcase>
-<testcase classname="conduitApp.feature.HomePage" name="[2:22] Get 10 articles" time="1.553121"><system-out>Given url 'https://api.realworld.io/api/' ................................. passed
+<testcase classname="conduitApp.feature.HomePage" name="[2:22] Get 10 articles" time="1.397558"><system-out>Given url 'https://api.realworld.io/api/' ................................. passed
 Given params { limit :10, offset : 0} ..................................... passed
 Given path 'articles' ..................................................... passed
 When method Get ........................................................... passed
